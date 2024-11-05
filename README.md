@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 This project is an Amazon clone developed by Avishkar Shinde and Omkar Udata for educational purposes. It is not intended for commercial use, nor does it replicate Amazon's proprietary systems, logos, or branding. This project was created to enhance front-end and back-end development skills and is for learning and demonstration purposes only.
 
 Important Note=>
