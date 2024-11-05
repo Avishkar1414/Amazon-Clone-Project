@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #nav{
     color: green;
    background-color: black;
@@ -26,4 +27,34 @@ ul {
  #body{
     color: red;
  }
+=======
+#nav{
+    color: green;
+   background-color: black;
+
+}
+li{
+    
+    float:inline-start;  
+    padding: 8px;
+    
+}
+ul {
+   
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+  }
+  a:hover, a.nav:active{
+    opacity:2;
+    background-color: yellow;
+    text-decoration: underline;
+    border-radius: 5px;
+ }
+ #body{
+    color: red;
+ }
+>>>>>>> origin/main
   
