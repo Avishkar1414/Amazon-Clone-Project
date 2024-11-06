@@ -9,15 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
-    /* $carousel-control-transition:opacity .15s  ease-in-out, transform .15s ease-in-out; */
-    .gw-card-layout {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping */
-    justify-content: space-evenly; 
-    max-width: 85%; /* Ensure it doesn't exceed the viewport */
-    margin: auto;
-}
+ 
 
+ .cust:hover{
+  border:1px solid white;
+  
+ }
 .card {
     flex: 1 1 300px; /* Allow cards to grow and shrink, with a base width of 300px */
     margin: 10px; /* Add some margin to prevent overlap */
@@ -27,24 +24,25 @@
     justify-content: start;
     background-color:#222e3d;
     color:white;
-    
+    text-align: center;
     height: 5vh;
 
    }
    .sub-nav .text{
     display: flex;
-    text-align: center;
-    gap: 1rem;                            
-    margin-left: 2rem;
-    padding-top:2px;
+   justify-content: start;
+    gap: 15px;                            
+    margin-left: 1rem;
+   
   
     
     }
-     p:hover{
-      /* padding: 2px; */
-     transform: scaleX(1.0);
+    .sub-nav p:hover{
+      /* margin:none; */
+     padding-bottom: 28px;
+     transform: none  !important;
      border: 1px solid white;
-     height: 3.7vh;
+     /* height: 2vh; */
      /* width: auto; */
     }
   .blur-bottom {
@@ -59,11 +57,11 @@
    left: 8px;
    margin: auto;
    width: 95rem;
-   height: 200px; /* Adjust this height as desired */
+   height: 200px;
    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 60%, rgba(255, 255, 255, 1) 100%);
-   backdrop-filter: blur(10px); /* Adjust blur intensity */
+   backdrop-filter: blur(10px); 
    z-index: 1;
-   pointer-events: none; /* Allows clicks to pass through */
+   pointer-events: none; 
    }
   
      @media (min-width: 1200px) {
@@ -82,12 +80,12 @@
 
     <div class="text-center text-light" id="cust-container" style="height: 10vh; padding-top:10px; background-color: #131921; text-align: center; ">
         <div class="row">
-            <div class="col-1 text-light"><img src="./Brand_Logos/amazon.in.png" alt="" height="40px" width="140px"></div>
-            <div class="col-2  text-light" style="margin-left: 1rem; font-size: 15px;"> <span><small>Delivering to Pune 411002</small></span> <span>
+            <div class="col-1 text-light cust"><img src="./Brand_Logos/amazon.in.png" alt="" height="40px" width="140px"></div>
+            <div class="col-2  text-light cust" style="margin-left: 1rem; font-size: 15px;"> <span><small>Delivering to Pune 411002</small></span> <span>
               <i class="fa-light fa-location-dot"></i><br>Update location</div></span>
             <div class="col-5">
                 <form>
-                <div class="input-group flex "  style="margin-left: -2rem; width: 37rem;">
+                <div class="input-group flex cust"  style="margin-left: -2rem; width: 37rem;">
                   <span class="input-group-text justify-content-start" style="background-color: #e6e6e6;">All</span>  
                     <input type="text"  class="form-control" placeholder="Search Amazon.in" name="search" >
                     
@@ -130,7 +128,7 @@
 </div>
 <div class="sub-nav">
 
-    <div class="text">
+    <div class="text" style="padding-top: 0px ;">
         <p>All</p>
         <p>fresh</p>
         <p>Amazon miniTV</p>
@@ -191,50 +189,15 @@
   </button>
 </div>
   </div>
-  <!-- <div class="gw-card-layout" 
-  style="display: flex;
-  position: absolute; top: 340px; left: 50%; transform: translateX(-50%); z-index: 1; justify-content:space-evenly; 
-  height: 100vh; width: 85%;">
-
-    <div class="card" style="width: 350px; height: 430px; margin-left: 17px; padding: 20px">
-      <h5 class="card-title"><b>New deals added everyday</b></h5>
-        <img src="./amazon_photos/Screenshot 2024-10-26 235443.png" 
-        alt="..." width="310px" height="300px">
-       <p style="margin-top: 20PX; color: green;">Explore now</p>
-        
+ <div class="container-card">
+  <div class="container-fluid">
+    <div class="row">
+    
     </div>
-    <div class="card" style="width: 350px; height: 430px; margin-left: 17px; padding: 20px">
-      <h5 class="card-title"><b>Minimum 50% off | Home,<br>kitchen & more</b></h5>
-      <div class="sub" style="display: flex; flex-wrap: wrap; gap:8px; justify-content: space-evenly;" >
-         
-        <img src="./amazon_photos/kitchen apliances.jpg" alt="" width="140px" height= "100px">
-
-        <img src="./amazon_photos/home_decor.jpg" alt="" width="140px;">
-        <img src="./amazon_photos/home_improvement.jpg" alt="" width="140px;">
-        <img src="./amazon_photos/furniture.jpg" alt="" width="140px;">
-      </div>
-       <p style="margin-top: 20PX; color: green;">See all Details</p>
-        
     </div>
-    <div class="card" style="width: 350px; height: 430px; margin-left: 17px; padding: 20px">
-      <h5 class="card-title"><b>New deals added everyday</b></h5>
-        <img src="./amazon_photos/Screenshot 2024-10-26 235443.png" 
-        alt="..." width="310px" height="300px">
-       <p style="margin-top: 20PX; color: green;">Explore now</p>
-        
-    </div>
-    <div class="card" style="width: 350px; height: 170px; margin-left: 17px; padding: 20px">
-      <h5 class="card-title"><b>Sign in for your best<br> experience</b></h5>
-       <button style="background-color: rgb(255, 219, 111); width: 300px;
-        text-align: center; border:none;
-        border-radius: 20px; padding:3px; margin-top: 10px;">Sign in Securely</button>
-        
-    </div>
-</div> -->
-
-
+  </div>
+ </div>
  
-
 <script>
   const myCarouselElement = document.querySelector('#carouselExampleAutoplaying')
 
