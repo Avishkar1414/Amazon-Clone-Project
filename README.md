@@ -16,3 +16,5 @@ Hover effects and animations
 Making it mobile responsive
 Adding cart and checkout functionality
 Feel free to explore and suggest improvements! 🚀
+
+Live demo:- amazon-clone-project-azure.vercel.app
