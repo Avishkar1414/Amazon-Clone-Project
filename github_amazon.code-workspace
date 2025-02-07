@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "github_amazon",
+			"path": "."
+		},
+		{
+			"name": "Aphotos",
+			"path": "../../Downloads/Aphotos"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "github_amazon"
+	}
+}
